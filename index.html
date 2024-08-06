@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pea Shooter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d75e165c56.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+
+    <header>
+        <h1 style="color: whitesmoke;">HTML 5 Games</h1>
+    </header>
+    <main id="gameContainer">
+        <div id="gameDiv"></div>
+        <div id="mainScreen">
+            <h1 class="title">Pea Shooter <i class="fa-solid fa-bullseye"></i></h1>
+            <h4 id="highScoreTxt"></h4>
+            <div class="btnContainer">
+                <button class="btn" id="playBtn" type="button">Play</button>
+                <button class="btn" id="instructionBtn" type="button">Instructions</button>
+            </div>
+            
+        </div>
+        <div id="gameOverScreen">
+            <h1 class="title">Game Over</h1>
+            <h4 id="scoreTxt"></h4>
+            <div class="btnContainer">
+                <button class="btn" type="button" id="playAgainBtn">Play Again</button>
+                <button class="btn" type="button" id="backToHomeBtn">Back To Home</button>
+            </div>
+
+        </div>
+        <div class="title" id="instructionScreen">
+            <h4>Welcome to Pea Shooter!</h4>
+            <p>Your goal is to shoot as many birds as possible before the time runs out.</p>
+            
+            <h4>Controls</h4>
+            <p>Use the mouse to move the crosshair and left-click to shoot.</p>
+            <!-- <p>Press the spacebar to pause and unpause the game.</p> -->
+            
+            <h4>Objective</h4>
+            <p>Try to beat your high score! Good luck!</p>
+
+            <div class="btnConatiner">
+                <button class="btn" id="back" type="button">Back</button>
+            </div>
+
+        </div>   
+    </main>
+    <footer> Pea Shooter Created By Justice Manly</footer>
+
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
