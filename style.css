@@ -67,6 +67,20 @@ main {
     height: 600px; /* Fixed height of the main container */
 }
 
+#tooSmall{
+    position: absolute;
+    display: none;
+    height: 100dvh;
+    width: 100dvw;
+    background-color: lightblue;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+}
+
 #gameDiv {
     display: none; /* Ensure the div is visible */
     width: 100%;    /* Full width of the parent container */

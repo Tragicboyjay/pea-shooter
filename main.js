@@ -25,6 +25,7 @@ const instructionScreen = document.getElementById("instructionScreen");
 const instructionBtn = document.getElementById("instructionBtn");
 const back = document.getElementById("back");
 const backToHomeBtn = document.getElementById("backToHomeBtn");
+const tooSmall = document.getElementById("tooSmall");
 
 
 function showInstructions() {
@@ -61,11 +62,34 @@ back.addEventListener("click", () => {
 backToHomeBtn.addEventListener("click", () => {
     gameOverScreen.style.display = "none";
     mainScreen.style.display = "flex";
+
+    if (game) {
+        game.destroy(true);
+        game = null;
+    }
 })
 
 window.onload = () => {
+    const windowWidth = window.innerWidth
+
+    if (windowWidth < 850) {
+        tooSmall.style.display = "flex";
+    } else {
+        tooSmall.style.display = "none";
+    }
+
     const highScoreTxt = document.getElementById("highScoreTxt");
     highScoreTxt.textContent = `High Score: ${localStorage.getItem("PS_HighScore")}` || "High Score: 0";
 };
+
+window.onresize = () => {
+    const windowWidth = window.innerWidth
+
+    if (windowWidth < 850) {
+        tooSmall.style.display = "flex";
+    } else {
+        tooSmall.style.display = "none";
+    }
+}
 
 
