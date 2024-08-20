@@ -1,79 +1,68 @@
-Pea Shooter
+# Pea Shooter
+
 Pea Shooter is a simple shooting game where players use their mouse to aim and shoot at birds flying across the screen. The goal is to score as many points as possible within a 30-second time limit.
 
-Table of Contents
-Features
-Getting Started
-Game Controls
-How to Play
-Technologies Used
-Project Structure
-License
-Features
-Interactive Gameplay: Move the crosshair with your mouse and click to shoot.
-Score Tracking: Track your score based on the number of birds hit.
-Timed Challenge: The game lasts for 30 seconds. Try to score as high as possible!
-Pause/Resume: Press the spacebar to pause and resume the game.
-Animated Sprites: Birds are animated as they fly across the screen.
-Sound Effects: Includes sound effects for shooting and background music.
-Getting Started
-Prerequisites
-To run this game locally, you need:
+## Table of Contents
 
-A modern web browser (Chrome, Firefox, Edge, etc.)
-A local server (optional for development, e.g., using Live Server for VS Code)
-Installation
-Clone the repository:
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Gameplay](#gameplay)
+- [Technologies Used](#technologies-used)
+- [License](#license)
 
-bash
-Copy code
-git clone https://github.com/yourusername/pea-shooter.git
-Navigate to the project directory:
+## Features
 
-bash
-Copy code
-cd pea-shooter
-Open the project in your preferred code editor:
+- **Crosshair Control:** Move the crosshair using your mouse.
+- **Shooting Mechanics:** Left-click to shoot at the birds.
+- **Score Tracking:** Score points by hitting birds.
+- **Time Limit:** You have 30 seconds to score as many points as possible.
+- **Pause Functionality:** Press the space bar to pause or resume the game.
 
-bash
-Copy code
-code .
-Run the game:
+## Getting Started
 
-You can open index.html directly in your browser, or if you're using a local server, start the server and navigate to the provided URL.
+### Prerequisites
 
-Game Controls
-Move Crosshair: Move the mouse to aim.
-Shoot: Left-click the mouse.
-Pause/Resume: Press the Spacebar.
-How to Play
-Start the Game:
+To run this game locally, you will need:
 
-Click the "Play!" button on the main menu to begin.
-Objective:
+- A modern web browser
+- A local server for serving static files (e.g., [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) for VSCode)
 
-Shoot as many birds as you can within 30 seconds. Each bird you hit increases your score.
-End Game:
+### Installation
 
-The game ends when the timer reaches zero. Your final score is displayed.
-Pause/Resume:
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/yourusername/pea-shooter.git
+    ```
 
-Press the spacebar at any time to pause or resume the game.
-Technologies Used
-Phaser 3: A popular HTML5 game framework used for building the game.
-JavaScript/ES6 Modules: The game logic and mechanics.
-HTML5: The structure of the game interface.
-CSS3: Styling for the game and the menu.
-Visual Studio Code (VS Code): Recommended IDE for development.
-Project Structure
-bash
-Copy code
-├── assets/                # Game assets (images, sounds, etc.)
-├── src/                   # Source files
-│   ├── main.js            # Main game logic
-│   └── handleUI.js        # UI-related logic
-├── index.html             # HTML file
-├── style.css              # CSS file
-└── README.md              # This file
-License
-This project is licensed under the MIT License. You are free to use, modify, and distribute this software as long as the original license is included.
+2. Navigate to the project directory:
+    ```sh
+    cd pea-shooter
+    ```
+
+3. Serve the game using your preferred local server.
+
+### Running the Game
+
+Open your web browser and navigate to `http://localhost:5500` (or the URL provided by your local server). The game should load, and you can start playing by clicking the "Play!" button on the main menu.
+
+## Gameplay
+
+- **Objective:** Shoot down as many birds as possible within 30 seconds.
+- **Controls:**
+  - Move the crosshair with your mouse.
+  - Left-click to shoot.
+  - Press the space bar to pause or resume the game.
+
+## Technologies Used
+
+- **Phaser 3:** A popular game development framework.
+- **HTML5:** For structuring the web page.
+- **CSS3:** For styling the user interface.
+- **JavaScript (ES6+):** For game logic and interactivity.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+---
+
